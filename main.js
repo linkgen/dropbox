@@ -1,6 +1,9 @@
 let currentCorrectKey; // Make it a global variable
 let errorTimeout; // Variable to store the error timeout
 
+// Initialize the correct key
+currentCorrectKey = ['pixel', 'logic', 'codec', 'cloud', 'crash', 'debug', 'stack'][(new Date().getUTCDay() + 6) % 7];
+
 document.getElementById('link-form').addEventListener('submit', function(event) {
   event.preventDefault();
 
@@ -10,7 +13,6 @@ document.getElementById('link-form').addEventListener('submit', function(event) 
 
   const linkInput = document.getElementById('link-input').value;
   const keyInput = document.getElementById('link-key').value;
-  currentCorrectKey = ['pixel', 'logic', 'codec', 'cloud', 'crash', 'debug', 'stack'][(new Date().getUTCDay() + 6) % 7];
 
   // Check if the link is in the correct format
   const linkFormatRegex = /^https:\/\/www\.dropbox\.com\/scl\/fi\/.*[?&]dl=0$/;
