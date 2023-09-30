@@ -77,13 +77,13 @@ function clearError() {
 function openshrtlink() {
   // Define the mapping of keys to URLs
   const keyToURL = {
-    'pixel': 'https://shrinkforearn.xyz/9SGmZLE',
-    'logic': 'https://shrinkforearn.xyz/LD2NPbbt',
-    'codec': 'https://shrinkforearn.xyz/s2TUf2',
-    'cloud': 'https://shrinkforearn.xyz/HTJX',
-    'crash': 'https://shrinkforearn.xyz/R6Vvx8',
-    'debug': 'https://shrinkforearn.xyz/5N36',
-    'stack': 'https://shrinkforearn.xyz/o2ymcUAD'
+    'pixel': 'https://adrinolinks.com/dropbox_key',
+    'logic': 'https://adrinolinks.com/dropbox_key',
+    'codec': 'https://adrinolinks.com/dropbox_key',
+    'cloud': 'https://adrinolinks.com/dropbox_key',
+    'crash': 'https://adrinolinks.com/dropbox_key',
+    'debug': 'https://adrinolinks.com/dropbox_key',
+    'stack': 'https://adrinolinks.com/dropbox_key'
   };
 
   // Check if the currentCorrectKey is in the mapping
