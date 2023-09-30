@@ -1,0 +1,28 @@
+<html>
+  <script>
+    // Function to extract the value of 'c' parameter from the URL and redirect
+function redirectToCParameterURL() {
+    // Get the URL query string
+    const queryString = window.location.search;
+    
+    // Check if the query string contains 'c=' parameter
+    if (queryString.includes('?c=')) {
+        // Extract the 'c' parameter value
+        const cParamValue = queryString.split('?c=')[1];
+        
+        // Construct the URL
+        const redirectURL = `https://www.dropbox.com/scl/fi/${decodeURIComponent(cParamValue)}&dl=1`;
+        
+        // Redirect the user to the URL
+        window.location.href = redirectURL;
+    } else {
+        // If 'c' parameter is not found, redirect to Google.com
+        window.location.href = 'https://www.google.com';
+    }
+}
+
+// Call the function to initiate the redirection when the window is loaded
+window.onload = redirectToCParameterURL;
+
+  </script>
+</html>
