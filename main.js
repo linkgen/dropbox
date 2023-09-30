@@ -1,3 +1,4 @@
+let currentCorrectKey; // Make it a global variable
 let errorTimeout; // Variable to store the error timeout
 
 document.getElementById('link-form').addEventListener('submit', function(event) {
@@ -9,7 +10,7 @@ document.getElementById('link-form').addEventListener('submit', function(event) 
 
   const linkInput = document.getElementById('link-input').value;
   const keyInput = document.getElementById('link-key').value;
-  const currentCorrectKey = ['pixel', 'logic', 'codec', 'cloud', 'crash', 'debug', 'stack'][(new Date().getUTCDay() + 6) % 7];
+  currentCorrectKey = ['pixel', 'logic', 'codec', 'cloud', 'crash', 'debug', 'stack'][(new Date().getUTCDay() + 6) % 7];
 
   // Check if the link is in the correct format
   const linkFormatRegex = /^https:\/\/www\.dropbox\.com\/scl\/fi\/.*[?&]dl=0$/;
@@ -33,7 +34,7 @@ document.getElementById('link-form').addEventListener('submit', function(event) 
   document.getElementById('results').style.display = 'block';
   document.getElementById('copyButton').style.display = 'block';
   document.getElementById('convert-more-button').style.display = 'block';
-  
+
   // Hide the form and get key button
   document.getElementById('link-form').classList.add('hide');
   document.getElementById('getKeyButton').classList.add('hide');
@@ -71,25 +72,21 @@ function clearError() {
   }
 }
 
-function refreshPage() {
-  window.location.reload();
-}
-
 function openshrtlink() {
-    // Define the mapping of keys to URLs
-    const keyToURL = {
-        'pixel': 'https://shrinkforearn.xyz/9SGmZLE',
-        'logic': 'https://shrinkforearn.xyz/LD2NPbbt',
-        'codec': 'https://shrinkforearn.xyz/s2TUf2',
-        'cloud': 'https://shrinkforearn.xyz/HTJX',
-        'crash': 'https://shrinkforearn.xyz/R6Vvx8',
-        'debug': 'https://shrinkforearn.xyz/5N36',
-        'stack': 'https://shrinkforearn.xyz/o2ymcUAD'
-    };
+  // Define the mapping of keys to URLs
+  const keyToURL = {
+    'pixel': 'https://shrinkforearn.xyz/9SGmZLE',
+    'logic': 'https://shrinkforearn.xyz/LD2NPbbt',
+    'codec': 'https://shrinkforearn.xyz/s2TUf2',
+    'cloud': 'https://shrinkforearn.xyz/HTJX',
+    'crash': 'https://shrinkforearn.xyz/R6Vvx8',
+    'debug': 'https://shrinkforearn.xyz/5N36',
+    'stack': 'https://shrinkforearn.xyz/o2ymcUAD'
+  };
 
-    // Check if the currentCorrectKey is in the mapping
-    if (currentCorrectKey in keyToURL) {
-        // Open the corresponding URL in a new tab/window with no referrer
-        window.open(keyToURL[currentCorrectKey], '_blank', 'noreferrer');
-    }
+  // Check if the currentCorrectKey is in the mapping
+  if (currentCorrectKey in keyToURL) {
+    // Open the corresponding URL in a new tab/window with no referrer
+    window.open(keyToURL[currentCorrectKey], '_blank', 'noreferrer');
+  }
 }
