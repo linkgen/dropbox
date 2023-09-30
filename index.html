@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Dropbox direct links</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="https://bootstrapmade.com/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://bootstrapmade.com/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>DROPBOX</h1>
+      <h2>Generate direct download link</h2>
+      <section id="generate-link">
+        <div class="container">
+          <form id="link-form" novalidate>
+            <input type="text" placeholder="Your Link" id="link-input" required>
+            <input type="text" placeholder="Enter Key" id="link-key" required>
+            <button type="submit">SUBMIT</button>
+          </form>
+          <button id="getKeyButton" onclick="openshrtlink()">Get Key</button>
+
+          <br>
+          <div id="error-container"></div>
+        </div>
+      </section>
+
+      <section id="results" style="display: none;">
+          <div class="message-box success-message">
+            <span>Converted Link:</span>
+            <p id="convertedLink"></p>
+         
+          <button id="copyButton">COPY TO CLIPBOARD</button>
+            <br>
+          <button id="convert-more-button" onclick="refreshPage()">Convert More</button>
+        </div>
+      </section>
+    </div>
+  </section>
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
+
