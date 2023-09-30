@@ -29,7 +29,7 @@ document.getElementById('link-form').addEventListener('submit', function(event) 
 
   // Extract the remaining link and add the desired text
   const remainingLink = linkInput.replace('https://www.dropbox.com/scl/fi/', '').replace('?dl=0', '').replace('&dl=0', '');
-  const modifiedLink = window.location.origin + '/d.php?c=' + remainingLink;
+  const modifiedLink = window.location.origin + '/dropbox/d.php?c=' + remainingLink;
 
   // Display the modified link as result
   document.getElementById('convertedLink').innerText = modifiedLink;
