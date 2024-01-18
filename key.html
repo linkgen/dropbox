@@ -78,7 +78,73 @@
     </div>
 
     <script>
-        var _0x1463d0=_0x22b6;(function(_0x36cca9,_0x5cf1bb){var _0x1ef39e=_0x22b6,_0x14bcde=_0x36cca9();while(!![]){try{var _0x12a775=-parseInt(_0x1ef39e(0x11e))/0x1*(-parseInt(_0x1ef39e(0x106))/0x2)+parseInt(_0x1ef39e(0x10f))/0x3*(-parseInt(_0x1ef39e(0x124))/0x4)+-parseInt(_0x1ef39e(0x101))/0x5+parseInt(_0x1ef39e(0x11c))/0x6*(-parseInt(_0x1ef39e(0x123))/0x7)+parseInt(_0x1ef39e(0x118))/0x8*(-parseInt(_0x1ef39e(0x105))/0x9)+-parseInt(_0x1ef39e(0x120))/0xa+-parseInt(_0x1ef39e(0xfe))/0xb*(-parseInt(_0x1ef39e(0x11a))/0xc);if(_0x12a775===_0x5cf1bb)break;else _0x14bcde['push'](_0x14bcde['shift']());}catch(_0x3eb932){_0x14bcde['push'](_0x14bcde['shift']());}}}(_0x136f,0x238c0));const keysArray=['pixel','logic',_0x1463d0(0x113),_0x1463d0(0x11d),'crash','debug',_0x1463d0(0xfd)],currentDayIndex=(new Date()['getUTCDay']()+0x6)%0x7,currentCorrectKey=keysArray[currentDayIndex];function _0x22b6(_0x3747ad,_0x1e7981){var _0x136ff6=_0x136f();return _0x22b6=function(_0x22b662,_0x5ee80e){_0x22b662=_0x22b662-0xfb;var _0x164fac=_0x136ff6[_0x22b662];return _0x164fac;},_0x22b6(_0x3747ad,_0x1e7981);}document[_0x1463d0(0x10e)](_0x1463d0(0x119))['innerText']=currentCorrectKey;function copyKeyToClipboard(){var _0x3e06e4=_0x1463d0,_0x16a13a=document[_0x3e06e4(0x10e)]('softwareKey'),_0xc357f=_0x16a13a['innerText'],_0x1714d3=document[_0x3e06e4(0x122)]('input');_0x1714d3[_0x3e06e4(0x110)](_0x3e06e4(0x10b),_0xc357f),document[_0x3e06e4(0xfc)][_0x3e06e4(0x104)](_0x1714d3),_0x1714d3[_0x3e06e4(0x100)](),document['execCommand'](_0x3e06e4(0x121)),document[_0x3e06e4(0xfc)][_0x3e06e4(0x11f)](_0x1714d3),alert(_0x3e06e4(0x107)+_0xc357f);}var referrer=document[_0x1463d0(0x111)],expectedReferrer=_0x1463d0(0xff);function _0x136f(){var _0x1eb8e8=['Access\x20denied.\x20Please\x20visit\x20from\x20the\x20correct\x20source.','value','none','Redirecting\x20in\x20','getElementById','3SWXFxw','setAttribute','referrer','innerText','codec','display','copyButton','\x20seconds...','href','8Achamo','softwareKey','12AWpGZK','error-message','42EDDvyd','cloud','272387HWwjZA','removeChild','1092530UpFgCp','copy','createElement','274610NoEzhi','468388obRLoG','style','body','stack','6849502nJwcWQ','https://amritadrino.com/','select','1018030qijUAJ','block','removeAttribute','appendChild','404127tqndxV','2EtOxIR','Key\x20copied\x20to\x20clipboard:\x20','location','disabled'];_0x136f=function(){return _0x1eb8e8;};return _0x136f();}if(referrer!==expectedReferrer){var errorMessage=document[_0x1463d0(0x10e)](_0x1463d0(0x11b));errorMessage[_0x1463d0(0x112)]=_0x1463d0(0x10a);var copyButton=document[_0x1463d0(0x10e)](_0x1463d0(0x115));copyButton[_0x1463d0(0xfb)][_0x1463d0(0x114)]=_0x1463d0(0x10c);}else{var keyElement=document['getElementById'](_0x1463d0(0x119));keyElement[_0x1463d0(0xfb)][_0x1463d0(0x114)]='block';var copyButton=document[_0x1463d0(0x10e)](_0x1463d0(0x115));copyButton[_0x1463d0(0x103)](_0x1463d0(0x109));}if(referrer!==expectedReferrer){var countdownElement=document[_0x1463d0(0x10e)]('countdown'),seconds=0x5;function updateCountdown(){var _0x3dd2f7=_0x1463d0;countdownElement[_0x3dd2f7(0xfb)]['display']=_0x3dd2f7(0x102),countdownElement[_0x3dd2f7(0x112)]=_0x3dd2f7(0x10d)+seconds+_0x3dd2f7(0x116),seconds--,seconds<0x0?window[_0x3dd2f7(0x108)][_0x3dd2f7(0x117)]='https://linkgen.github.io/dropbox/':setTimeout(updateCountdown,0x3e8);}updateCountdown();}
+        // Define the array of keys for each day
+        const keysArray = ['pixel', 'logic', 'codec', 'cloud', 'crash', 'debug', 'stack'];
+
+        // Get the current day and calculate the index for the correct key
+        const currentDayIndex = (new Date().getUTCDay() + 6) % 7;
+        const currentCorrectKey = keysArray[currentDayIndex];
+
+        // Display the current correct key in the software-key element
+        document.getElementById('softwareKey').innerText = currentCorrectKey;
+
+        // Function to copy the key to the clipboard
+        function copyKeyToClipboard() {
+            var keyElement = document.getElementById("softwareKey");
+            var keyText = keyElement.innerText;
+
+            var tempInput = document.createElement("input");
+            tempInput.setAttribute("value", keyText);
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            alert("Key copied to clipboard: " + keyText);
+        }
+
+        // Get the referrer URL
+        var referrer = document.referrer;
+
+        // Display the referrer as text
+       
+
+        // Define the expected referrer URL
+        var expectedReferrer = "https://tech.smallinfo.in/";
+
+        if (referrer !== expectedReferrer) {
+            var errorMessage = document.getElementById("error-message");
+            errorMessage.innerText = "Access denied. Please visit from the correct source.";
+            var copyButton = document.getElementById("copyButton");
+            copyButton.style.display = "none";
+        } else {
+            // Show the key if the referrer is correct
+            var keyElement = document.getElementById("softwareKey");
+            keyElement.style.display = "block";
+            // Enable the copy button
+            var copyButton = document.getElementById("copyButton");
+            copyButton.removeAttribute("disabled");
+        }
+
+        // Countdown and redirect after 5 seconds (only if referrer doesn't match)
+        if (referrer !== expectedReferrer) {
+            var countdownElement = document.getElementById("countdown");
+            var seconds = 5;
+
+            function updateCountdown() {
+                countdownElement.style.display = "block";
+                countdownElement.innerText = "Redirecting in " + seconds + " seconds...";
+                seconds--;
+
+                if (seconds < 0) {
+                    window.location.href = "https://linkgen.github.io/dropbox/";
+                } else {
+                    setTimeout(updateCountdown, 1000);
+                }
+            }
+
+            updateCountdown();
+        }
     </script>
 </body>
 </html>
