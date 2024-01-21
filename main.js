@@ -77,13 +77,13 @@ function clearError() {
 function openshrtlink() {
   // Define the mapping of keys to URLs
   const keyToURL = {
-    'pixel': 'https://linkpays.in/Dropboxkey',
-    'logic': 'https://linkpays.in/Dropboxkey',
-    'codec': 'https://linkpays.in/Dropboxkey',
-    'cloud': 'https://linkpays.in/Dropboxkey',
-    'crash': 'https://linkpays.in/Dropboxkey',
-    'debug': 'https://linkpays.in/Dropboxkey',
-    'stack': 'https://linkpays.in/Dropboxkey'
+    'pixel': 'https://ilil.in/dropbox_tool_key',
+    'logic': 'https://ilil.in/dropbox_tool_key',
+    'codec': 'https://ilil.in/dropbox_tool_key',
+    'cloud': 'https://ilil.in/dropbox_tool_key',
+    'crash': 'https://ilil.in/dropbox_tool_key',
+    'debug': 'https://ilil.in/dropbox_tool_key',
+    'stack': 'https://ilil.in/dropbox_tool_key'
   };
 
   // Check if the currentCorrectKey is in the mapping
