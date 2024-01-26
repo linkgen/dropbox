@@ -77,13 +77,13 @@ function clearError() {
 function openshrtlink() {
   // Define the mapping of keys to URLs
   const keyToURL = {
-    'pixel': 'https://publicearn.com/d-key',
-    'logic': 'https://publicearn.com/d-key',
-    'codec': 'https://publicearn.com/d-key',
-    'cloud': 'https://publicearn.com/d-key',
-    'crash': 'https://publicearn.com/d-key',
-    'debug': 'https://publicearn.com/d-key',
-    'stack': 'https://publicearn.com/d-key'
+    'pixel': 'https://link.short2url.in/0lnH',
+    'logic': 'https://link.short2url.in/0lnH',
+    'codec': 'https://link.short2url.in/0lnH',
+    'cloud': 'https://link.short2url.in/0lnH',
+    'crash': 'https://link.short2url.in/0lnH',
+    'debug': 'https://link.short2url.in/0lnH',
+    'stack': 'https://link.short2url.in/0lnH'
   };
 
   // Check if the currentCorrectKey is in the mapping
