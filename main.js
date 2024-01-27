@@ -77,13 +77,13 @@ function clearError() {
 function openshrtlink() {
   // Define the mapping of keys to URLs
   const keyToURL = {
-    'pixel': 'https://link.short2url.in/0lnH',
-    'logic': 'https://link.short2url.in/0lnH',
-    'codec': 'https://link.short2url.in/0lnH',
-    'cloud': 'https://link.short2url.in/0lnH',
-    'crash': 'https://link.short2url.in/0lnH',
-    'debug': 'https://link.short2url.in/0lnH',
-    'stack': 'https://link.short2url.in/0lnH'
+    'pixel': 'https://urlspay.in/st?api=fb445ab94d27adcaf27c9539f501d4bd287e63ba&url=https://linkgen.github.io/dropbox/key.html',
+    'logic': 'https://urlspay.in/st?api=fb445ab94d27adcaf27c9539f501d4bd287e63ba&url=https://linkgen.github.io/dropbox/key.html',
+    'codec': 'https://urlspay.in/st?api=fb445ab94d27adcaf27c9539f501d4bd287e63ba&url=https://linkgen.github.io/dropbox/key.html',
+    'cloud': 'https://urlspay.in/st?api=fb445ab94d27adcaf27c9539f501d4bd287e63ba&url=https://linkgen.github.io/dropbox/key.html',
+    'crash': 'https://urlspay.in/st?api=fb445ab94d27adcaf27c9539f501d4bd287e63ba&url=https://linkgen.github.io/dropbox/key.html',
+    'debug': 'https://urlspay.in/st?api=fb445ab94d27adcaf27c9539f501d4bd287e63ba&url=https://linkgen.github.io/dropbox/key.html',
+    'stack': 'https://urlspay.in/st?api=fb445ab94d27adcaf27c9539f501d4bd287e63ba&url=https://linkgen.github.io/dropbox/key.html'
   };
 
   // Check if the currentCorrectKey is in the mapping
