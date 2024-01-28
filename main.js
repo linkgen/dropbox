@@ -77,13 +77,13 @@ function clearError() {
 function openshrtlink() {
   // Define the mapping of keys to URLs
   const keyToURL = {
-    'pixel': 'https://google.com',
-    'logic': 'https://google.com',
-    'codec': 'https://google.com',
-    'cloud': 'https://google.com',
-    'crash': 'https://google.com',
-    'debug': 'https://google.com',
-    'stack': 'https://google.com'
+    'pixel': 'https://ilil.in/Key',
+    'logic': 'https://ilil.in/Key',
+    'codec': 'https://ilil.in/Key',
+    'cloud': 'https://ilil.in/Key',
+    'crash': 'https://ilil.in/Key',
+    'debug': 'https://ilil.in/Key',
+    'stack': 'https://ilil.in/Key'
   };
 
   // Check if the currentCorrectKey is in the mapping
