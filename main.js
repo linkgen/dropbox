@@ -77,13 +77,13 @@ function clearError() {
 function openshrtlink() {
   // Define the mapping of keys to URLs
   const keyToURL = {
-    'pixel': 'https://urlspay.in/st?api=fb445ab94d27adcaf27c9539f501d4bd287e63ba&url=https://linkgen.github.io/dropbox/key.html',
-    'logic': 'https://urlspay.in/st?api=fb445ab94d27adcaf27c9539f501d4bd287e63ba&url=https://linkgen.github.io/dropbox/key.html',
-    'codec': 'https://urlspay.in/st?api=fb445ab94d27adcaf27c9539f501d4bd287e63ba&url=https://linkgen.github.io/dropbox/key.html',
-    'cloud': 'https://urlspay.in/st?api=fb445ab94d27adcaf27c9539f501d4bd287e63ba&url=https://linkgen.github.io/dropbox/key.html',
-    'crash': 'https://urlspay.in/st?api=fb445ab94d27adcaf27c9539f501d4bd287e63ba&url=https://linkgen.github.io/dropbox/key.html',
-    'debug': 'https://urlspay.in/st?api=fb445ab94d27adcaf27c9539f501d4bd287e63ba&url=https://linkgen.github.io/dropbox/key.html',
-    'stack': 'https://urlspay.in/st?api=fb445ab94d27adcaf27c9539f501d4bd287e63ba&url=https://linkgen.github.io/dropbox/key.html'
+    'pixel': 'https://google.com',
+    'logic': 'https://google.com',
+    'codec': 'https://google.com',
+    'cloud': 'https://google.com',
+    'crash': 'https://google.com',
+    'debug': 'https://google.com',
+    'stack': 'https://google.com'
   };
 
   // Check if the currentCorrectKey is in the mapping
