@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Key for tool</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            background: black;
+            overflow: hidden;
+            color: #00ff00;
+        }
+
+        /* Background Effect */
+        .matrix {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: black;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .matrix div {
+            position: absolute;
+            top: -100%;
+            width: 1px;
+            height: 100%;
+            color: #00ff00;
+            font-size: 14px;
+            animation: fall linear infinite;
+            text-shadow: 0 0 10px #00ff00;
+        }
+
+        @keyframes fall {
+            0% {top: -100%;}
+            100% {top: 100%;}
+        }
+
+        /* Main Container */
+        .container {
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 255, 0, 0.5);
+            border-radius: 8px;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #00ff00;
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-shadow: 0 0 5px #00ff00;
+        }
+
+        .password-box {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            font-size: 22px;
+            border: 1px solid #00ff00;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            color: #00ff00;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .btn {
+            background-color: #00ff00;
+            color: black;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #00cc00;
+        }
+
+        /* Toast styling */
+        .toast {
+            visibility: hidden;
+            min-width: 250px;
+            background-color: #00ff00;
+            color: black;
+            text-align: center;
+            border-radius: 4px;
+            padding: 16px;
+            position: fixed;
+            z-index: 2;
+            left: 50%;
+            bottom: 30px;
+            transform: translateX(-50%);
+            font-size: 17px;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s ease-in-out;
+        }
+
+        .toast.show {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hacking Numbers Background Effect -->
+    <div class="matrix">
+        <!-- Multiple columns of numbers -->
+        <div style="left: 10%; animation-duration: 8s;">1010101010101</div>
+        <div style="left: 20%; animation-duration: 10s;">0110010110110</div>
+        <div style="left: 30%; animation-duration: 9s;">1101010100101</div>
+        <div style="left: 40%; animation-duration: 7s;">1001010100101</div>
+        <div style="left: 50%; animation-duration: 11s;">0110110101001</div>
+        <div style="left: 60%; animation-duration: 12s;">1010110010100</div>
+        <div style="left: 70%; animation-duration: 6s;">1100101010101</div>
+        <div style="left: 80%; animation-duration: 9s;">0101011001011</div>
+        <div style="left: 90%; animation-duration: 8s;">1010101010101</div>
+    </div>
+
+    <div class="container">
+        <h2>key for tool is</h2>
+        <div id="password" class="password-box">crash</div>
+        <button class="btn" onclick="copyPassword()">Copy Password</button>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Password copied to clipboard!</div>
+
+    <script>
+        function copyPassword() {
+            var passwordText = document.getElementById('password').innerText;
+            navigator.clipboard.writeText(passwordText).then(function() {
+                showToast();
+            }, function(err) {
+                showToast('Failed to copy password');
+            });
+        }
+
+        function showToast(message = 'Password copied to clipboard!') {
+            var toast = document.getElementById('toast');
+            toast.innerText = message;
+            toast.className = "toast show";
+            setTimeout(function() {
+                toast.className = toast.className.replace("show", "");
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
